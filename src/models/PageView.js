@@ -5,6 +5,7 @@ const PageView = new Schema({
     userId: String,
     pageId: String,
     browserName: String,
+    timestamp: {type: Number, default: Date.now()},
     country: {type: String, uppercase: true},
     props: {},
 });
