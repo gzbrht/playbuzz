@@ -20,10 +20,7 @@ exports.fetch = async ({query, cursor, limit = 20}) => {
     } else {
         pageViews = results;
     }
-    return {
-        pageViews: pageViews.map(res => res.toJSON()),
-        next,
-    };
+    return {pageViews, next};
 }
 
 exports.fetchByCountry = async () => {
