@@ -7,7 +7,6 @@ const extractMessage = err => {
     return err;
 };
 
-
 const extractStatus = err => {
     if (Number.isInteger(err.status)) {
         return err.status;
