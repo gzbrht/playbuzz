@@ -1,0 +1,8 @@
+{
+    "mongodb": {
+        "host": "localhost",
+        "port": 27017,
+        "database": "playbuzz"
+    },
+    "accessToken": "6i2nSgWu0DfYIE8I0ZBJOtxTmHJATRzu"
+}

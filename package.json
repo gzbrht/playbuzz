@@ -1,0 +1,26 @@
+{
+  "name": "playbuzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "6.8.0"
+  },
+  "dependencies": {
+    "bluebird": "3.7.2",
+    "compression": "1.7.4",
+    "config": "3.2.5",
+    "express": "4.17.1",
+    "geoip-lite": "1.4.0",
+    "mongoose": "5.8.10",
+    "morgan": "1.9.1",
+    "useragent": "2.3.0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": false,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "script",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "templateStrings": true
+        }
+    },
+    "plugins": [
+        "babel"
+    ],
+    "rules": {
+        "strict": "error",
+        "no-const-assign": "error",
+        "no-this-before-super": "error",
+        "no-undef": "error",
+        "no-unreachable": "error",
+        "no-unused-vars": ["warn", {"argsIgnorePattern": "^_", "args": "all", "ignoreRestSiblings": true}],
+        "no-trailing-spaces": "warn",
+        "no-multiple-empty-lines": "warn",
+        "comma-dangle": ["warn", "always-multiline"],
+        "constructor-super": "warn",
+        "valid-typeof": "warn",
+        "indent": ["warn", 4, {"MemberExpression": "off", "SwitchCase": 1}],
+        "array-callback-return": "off",
+        "default-case": "off",
+        "new-cap": 0,
+        "babel/object-curly-spacing": 1,
+        "babel/quotes": ["warn", "single", {"allowTemplateLiterals": true}],
+        "babel/semi": 1,
+        "babel/no-unused-expressions": 1
+    }
+}
