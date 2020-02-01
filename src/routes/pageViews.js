@@ -21,7 +21,6 @@ router.post('/', (req, res) => {
     res.end();
 });
 
-
 router.get('/', authorize, withPromise(async req => {
     const {limit, cursor, ...query} = req.query;
     return await fetch({query, limit: +limit, cursor});
