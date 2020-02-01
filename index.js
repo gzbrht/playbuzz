@@ -6,10 +6,10 @@ const db = require('./src/db');
 const config = require('config');
 const rootRouter = require('./src/routes');
 process.on('uncaughtException', err => {
-    console.error('uncaughtException');
+    console.error('uncaughtException', err);
 });
 process.on('unhandledRejection', err => {
-    console.error('unhandledRejection');
+    console.error('unhandledRejection', err);
 });
 async function start() {
     try {
