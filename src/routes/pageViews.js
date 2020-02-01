@@ -3,7 +3,7 @@ const router = module.exports = express.Router();
 const {fetch, add, fetchByCountry, rate} = require('../controllers/pageViews');
 const geoip = require('geoip-lite');
 const useragent = require('useragent');
-const {authorize} = require('../middleware');
+const {authorize} = require('../middlewares');
 
 router.post('/', (req, res) => {
     const {userId, pageId, props} = req.body;
