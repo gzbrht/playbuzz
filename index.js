@@ -5,6 +5,8 @@ const logger = require('morgan');
 const db = require('./src/db');
 const config = require('config');
 const rootRouter = require('./src/routes');
+const middleware = require('./src/middlewares');
+
 process.on('uncaughtException', err => {
     console.error('uncaughtException', err);
 });
@@ -23,11 +25,8 @@ async function start() {
         app.use(logger('dev'));
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({extended: true}));
-        app.use((err, _, res, __) => {
-            console.error(err);
-            res.status(500).send('Server Error');
-        });
         app.use('/', rootRouter);
+        app.use(middleware.error);
         app.listen(port);
         console.log('server is up and running on port %d', port);
     } catch(err) {
