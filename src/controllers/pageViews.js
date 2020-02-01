@@ -37,7 +37,7 @@ exports.rate = async ({skip = 0, limit = 10}) => {
         {
             $group: {
                 _id: {pageId: "$pageId"},
-                pageViewIds: {$addToSet: "$_id"},
+                userIds: {$addToSet: "$userId"},
                 count: {$sum: 1},
             }
         },
