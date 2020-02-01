@@ -1,4 +1,4 @@
-const model = require('../model/PageView');
+const model = require('../models/PageView');
 
 exports.add = async event => {
     await model.insertMany([event]);
