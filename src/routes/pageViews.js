@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
         pageId,
         browserName,
         country: geo ? geo.country : undefined,
-        props: {ip, ...props}
+        props: {ip, ...props},
     }).catch(error => console.error(error));
     res.end();
 });
