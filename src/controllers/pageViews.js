@@ -1,7 +1,7 @@
 const model = require('../models/PageView');
 
-exports.add = async event => {
-    await model.insertMany([event]);
+exports.add = async event pageView=> {
+    await model.insertMany([pageView]);
 }
 
 exports.fetch = async ({query, cursor, limit = 20}) => {
