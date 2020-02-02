@@ -1,2 +1,2 @@
 exports.authorize = require('./authorize');
-module.exports.error = require('./error');
+exports.error = require('./error');
